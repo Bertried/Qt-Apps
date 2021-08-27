@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Zero Class Generator</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Défintion de la Classe</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="nomLabel">
+            <property name="text">
+             <string>&amp;Nom :</string>
+            </property>
+            <property name="buddy">
+             <cstring>nomLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="nomLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="classeMReLabel">
+            <property name="text">
+             <string>Classe &amp;mère :</string>
+            </property>
+            <property name="buddy">
+             <cstring>classeMReLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="classeMReLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="defineLabel">
+            <property name="text">
+             <string>&amp;Header Guard :</string>
+            </property>
+            <property name="buddy">
+             <cstring>defineLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="defineLineEdit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Options</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="header">
+            <property name="text">
+             <string>Protéger le &amp;header contre les inclusions multiples</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="constructor">
+            <property name="text">
+             <string>Génerer un &amp;constructeur par défaut</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="destructor">
+            <property name="text">
+             <string>Génerer un &amp;destructeur</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>225</height>
+        </size>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QCheckBox" name="comments">
+          <property name="text">
+           <string>Ajouter des commentaires</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="auteurLabel">
+            <property name="text">
+             <string>&amp;Auteur :</string>
+            </property>
+            <property name="buddy">
+             <cstring>auteurLineEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="auteurLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="daTeDeCrAtionLabel">
+            <property name="text">
+             <string>Da&amp;te de Création :</string>
+            </property>
+            <property name="buddy">
+             <cstring>daTeDeCrAtionDateEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QDateEdit" name="daTeDeCrAtionDateEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="rLeDeLaClasseLabel">
+            <property name="text">
+             <string>&amp;Rôle de la Classe :</string>
+            </property>
+            <property name="buddy">
+             <cstring>rlDeLaClasseTextEdit</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPlainTextEdit" name="rlDeLaClasseTextEdit"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::NoButton</set>
+       </property>
+       <property name="centerButtons">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
