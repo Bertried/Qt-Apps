@@ -21,8 +21,7 @@ FORMS += \
     widget.ui
 
 TRANSLATIONS += \
-    ZeroClassGenerator_en.ts \
-    ZeroCLassGenerator_es.ts
+    ZeroClassGenerator_en.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
